@@ -1,0 +1,884 @@
+androsyn    2016/01/19 16:49:34 UTC	(20160119_0-29329)
+  Log:
+  blah..fix stupid bug that was stopping dh parameters from being unset
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/sslproc.c (File Modified) 
+
+
+androsyn    2016/01/13 19:14:52 UTC	(20160113_11-29311)
+  Log:
+  force commit
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config-h.in (File Modified) 
+
+
+androsyn    2016/01/13 19:00:10 UTC	(20160113_10-29309)
+  Log:
+  disable dependency tracking for libltdl
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.in (File Modified) 
+
+
+androsyn    2016/01/13 18:59:05 UTC	(20160113_9-29307)
+  Log:
+  blah..i hate this autoconf crap
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/configure (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/setup.h.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/configure (File Modified) 
+
+
+androsyn    2016/01/13 18:50:25 UTC	(20160113_8-29305)
+  Log:
+  rebuild automake with automake 1.11
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/RELNOTES (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/help/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/patchlevel.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/ssld/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/tools/Makefile.in (File Modified) 
+
+
+androsyn    2016/01/13 18:48:24 UTC	(20160113_7-29303)
+  Log:
+  i hate autotools
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/configure (File Modified) 
+
+
+androsyn    2016/01/13 18:37:34 UTC	(20160113_6-29301)
+  Log:
+  update svn:keywords
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/aclocal.m4  (Property Modified)
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/argz.c  (Property Modified)
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/argz_.h  (Property Modified)
+
+
+androsyn    2016/01/13 18:34:48 UTC	(20160113_5-29299)
+  Log:
+  rerun libtoolize etc
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/configure (File Modified) 
+
+
+androsyn    2016/01/13 18:27:07 UTC	(20160113_4-29297)
+  Log:
+  rerun autotools
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/configure (File Modified) 
+
+
+androsyn    2016/01/13 18:23:43 UTC	(20160113_3-29295)
+  Log:
+  update sqlite amalgamation
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/shell.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/sqlite3.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/sqlite3.h (File Modified) 
+
+
+androsyn    2016/01/13 18:07:49 UTC	(20160113_2-29291)
+  Log:
+  change the ordering of the ssl_cert setup, this allows the server to work without dhparam amongst other things
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/newconf.c (File Modified) 
+
+
+androsyn    2016/01/13 18:07:13 UTC	(20160113_1-29289)
+  Log:
+  correctly clear our ServerInfo.  This fixes rehashing for ssl related parameters
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/s_conf.c (File Modified) 
+
+
+androsyn    2016/01/13 18:01:32 UTC	(20160113_0-29287)
+  Log:
+  log to stderr if -foreground is passed
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/s_log.c (File Modified) 
+
+
+androsyn    2015/12/29 02:38:25 UTC	(20151229_0-29271)
+  Log:
+  sigh...make monitor, you know, work
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_nick.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_info.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_services.c (File Modified) 
+
+
+androsyn    2015/12/20 04:35:39 UTC	(20151220_0-29265)
+  Log:
+  backport signal handling fixes
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/bandb/bandb.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/resolver.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd_signal.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/ssld/ssld.c (File Modified) 
+
+
+androsyn    2015/12/18 17:15:54 UTC	(20151218_1-29251)
+  Log:
+  update the echo to say 2048 bits as well
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/doc/genssl.sh (File Modified) 
+
+
+androsyn    2015/12/18 00:07:15 UTC	(20151218_0-29235)
+  Log:
+  change default key sizes to 2048 bits and self sign using sha256
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/doc/genssl.sh (File Modified) 
+
+
+androsyn    2015/12/15 19:47:49 UTC	(20151215_0-29233)
+  Log:
+  rerun autotools
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/configure (File Modified) 
+
+
+androsyn    2015/12/10 20:14:50 UTC	(20151210_5-29223)
+  Log:
+  rebuild ircd_parser.c,h
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd_parser.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd_parser.h (File Modified) 
+
+
+androsyn    2015/12/10 19:54:15 UTC	(20151210_4-29221)
+  Log:
+  call rb_setselect to handle res_readreply rather than calling it directly to avoid a minor race condition, backported from trunk
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/resolver/res.c (File Modified) 
+
+
+androsyn    2015/12/10 18:35:59 UTC	(20151210_3-29219)
+  Log:
+  remove fprintf
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/newconf.c (File Modified) 
+
+
+androsyn    2015/12/10 14:02:24 UTC	(20151210_2-29217)
+  Log:
+  don't add hub/leaf masks to the hubleaf list until after the connect block is ended.  Also cleanup remote_confs correctly
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/newconf.c (File Modified) 
+
+
+androsyn    2015/12/10 13:57:05 UTC	(20151210_1-29215)
+  Log:
+  remove exempts on rehash...
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/include/reject.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/reject.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_conf.c (File Modified) 
+
+
+androsyn    2015/12/10 13:48:53 UTC	(20151210_0-29213)
+  Log:
+  first batch of backports for various memory leaks from trunk
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/include/patchlevel.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_stats.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd_parser.y (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/newconf.c (File Modified) 
+
+
+androsyn    2015/12/04 20:30:15 UTC	(20151204_0-29191)
+  Log:
+  don't remove dlines while walking the patricia trie or corruption will result
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/reject.c (File Modified) 
+
+
+androsyn    2015/10/13 15:05:40 UTC	(20151013_7-28763)
+  Log:
+  update RELNOTES
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/RELNOTES (File Modified) 
+
+
+androsyn    2015/10/13 15:04:20 UTC	(20151013_6-28761)
+  Log:
+  update relnotes and patchlevel still not quite ready though..
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/include/patchlevel.h (File Modified) 
+
+
+androsyn    2015/10/13 15:00:04 UTC	(20151013_5-28759)
+  Log:
+  yay autotools
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/configure (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/help/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/setup.h.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/compile (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/depcomp (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/install-sh (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/missing (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/ylwrap (File Modified) (Property Modified)
+	ircd-ratbox/branches/RATBOX_3_0/modules/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/ssld/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/tools/Makefile.in (File Modified) 
+
+
+androsyn    2015/10/13 14:55:16 UTC	(20151013_4-28757)
+  Log:
+  remove some old support code for gcc 3.3, we don't support that anymore i don't think
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd_lexer.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd_lexer.l (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd_parser.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd_parser.h (File Modified) 
+
+
+androsyn    2015/10/13 14:48:47 UTC	(20151013_3-28755)
+  Log:
+  remove the rest of EGD
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/include/s_conf.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/newconf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_conf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/sslproc.c (File Modified) 
+
+
+androsyn    2015/10/13 14:47:21 UTC	(20151013_2-28753)
+  Log:
+  keep signedness on this shift
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/ssld/ssld.c (File Modified) 
+
+
+androsyn    2015/10/13 14:46:54 UTC	(20151013_1-28751)
+  Log:
+  keep signedness on this shift
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/bandb/bandb.c (File Modified) 
+
+
+androsyn    2015/10/13 14:41:38 UTC	(20151013_0-28749)
+  Log:
+  initialize arglen
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/channel.c (File Modified) 
+
+
+androsyn    2015/10/12 15:49:10 UTC	(20151012_1-28739)
+  Log:
+  unconditionally send MAP isupport
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/supported.c (File Modified) 
+
+
+androsyn    2015/10/12 14:09:49 UTC	(20151012_0-28737)
+  Log:
+  add ACCEPT/MAP supported strings
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/supported.c (File Modified) 
+
+
+androsyn    2015/10/11 13:56:06 UTC	(20151011_0-28735)
+  Log:
+  actually free_monitor on delete
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_monitor.c (File Modified) 
+
+
+androsyn    2015/10/06 18:41:56 UTC	(20151006_2-28725)
+  Log:
+  use relative paths for libratbox svn:external
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/  (Property Modified)
+
+
+androsyn    2015/10/06 18:40:21 UTC	(20151006_1-28723)
+  Log:
+  more updates to RELNOTES
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/RELNOTES (File Modified) 
+
+
+androsyn    2015/10/06 18:39:36 UTC	(20151006_0-28721)
+  Log:
+  use relative paths for libratbox svn:external
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/  (Property Modified)
+	ircd-ratbox/branches/RATBOX_3_0/RELNOTES (File Modified) 
+
+
+androsyn    2015/10/02 20:57:42 UTC	(20151002_1-28697)
+  Log:
+  backport trunk monitor changes
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/help/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/monitor.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_conf.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/send.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/struct.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/ylwrap (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/Makefile.am (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_monitor.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/Makefile.am (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/client.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/monitor.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/src/newconf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_conf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_user.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/send.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/supported.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/ssld/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/tools/Makefile.in (File Modified) 
+
+
+androsyn    2015/10/02 16:49:39 UTC	(20151002_0-28681)
+  Log:
+  use libratbox functions
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/contrib/m_flags.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/m_mkpasswd.c (File Modified) 
+
+
+androsyn    2015/09/29 18:04:32 UTC	(20150929_4-28679)
+  Log:
+  update libltdl
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/COPYING.LIB (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/argz.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/argz_.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/ (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/compile (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/config.guess (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/config.sub (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/depcomp (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/install-sh (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/ltmain.sh (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config/missing (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/configure (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/ (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/lt__alloc.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/lt__dirent.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/lt__glibc.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/lt__private.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/lt__strl.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/lt_dlloader.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/lt_error.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/lt_system.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/libltdl/slist.h (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/loaders/ (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/loaders/dld_link.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/loaders/dlopen.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/loaders/dyld.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/loaders/load_add_on.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/loaders/loadlibrary.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/loaders/preopen.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/loaders/shl_load.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/lt__alloc.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/lt__dirent.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/lt__strl.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/lt_dlloader.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/lt_error.c (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/m4/ (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/m4/argz.m4 (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/m4/libtool.m4 (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/m4/ltdl.m4 (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/m4/ltoptions.m4 (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/m4/ltsugar.m4 (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/m4/ltversion.m4 (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/m4/lt~obsolete.m4 (File Added) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/slist.c (File Added) 
+
+
+androsyn    2015/09/29 17:51:20 UTC	(20150929_3-28677)
+  Log:
+  fix the time_t 64bit on 32bit openbsd mess
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_join.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_mode.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_nick.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_server.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_services.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_stats.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_svinfo.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_tb.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/bandbi.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/channel.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/client.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_conf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_user.c (File Modified) 
+
+
+androsyn    2015/09/29 17:09:18 UTC	(20150929_2-28675)
+  Log:
+  check for sizeof(time_t) and setup format specifiers
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/configure (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/configure.ac (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/setup.h.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/stdinc.h (File Modified) 
+
+
+androsyn    2015/09/29 17:06:09 UTC	(20150929_1-28673)
+  Log:
+  Fix autoconf/libtool/libltdl crap.  libltdl will only be built if needed, it will try to use the system libltdl by default. Backported from trunk
+  
+  
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/Makefile.am (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/configure (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/configure.ac (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/help/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/setup.h.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.am (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/README (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config-h.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config.guess (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/config.sub (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/configure (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/configure.ac (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/install-sh (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/ltdl.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/ltdl.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/ltmain.sh (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/missing (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/ssld/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/tools/Makefile.in (File Modified) 
+
+
+androsyn    2015/09/29 15:09:55 UTC	(20150929_0-28671)
+  Log:
+  remove mostly unused monitor code
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/doc/example.conf (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/help/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/monitor.h (File Deleted) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_conf.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/send.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/struct.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/Makefile.am (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_nick.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_info.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_monitor.c (File Deleted) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_services.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/static_modules.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/Makefile.am (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/client.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/monitor.c (File Deleted) 
+	ircd-ratbox/branches/RATBOX_3_0/src/newconf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_conf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_user.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/send.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/supported.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/ssld/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/tools/Makefile.in (File Modified) 
+
+
+androsyn    2015/08/10 18:23:42 UTC	(20150810_0-28529)
+  Log:
+  fix overlapping memcpy with memmove, recent variants of glibc will crash on modrestart
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/modules.c (File Modified) 
+
+
+androsyn    2014/08/04 17:31:18 UTC	(20140804_0-27478)
+  Log:
+  fix notice
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_die.c (File Modified) 
+
+
+androsyn    2013/01/28 23:38:59 UTC	(20130128_0-27433)
+  Log:
+  Reject cidr masks that are too large to make sense, assume they are nonsense and skip cidr checking for these
+  
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/match.c (File Modified) 
+
+
+androsyn    2012/12/31 21:34:15 UTC	(20121231_1-27414)
+  Log:
+  update release version
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/INSTALL (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/patchlevel.h (File Modified) 
+
+
+androsyn    2012/12/31 21:31:20 UTC	(20121231_0-27412)
+  Log:
+  update relnotes
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/RELNOTES (File Modified) 
+
+
+jilles      2012/05/27 13:09:42 UTC	(20120527_0-27399)
+  Log:
+  Backport trunk r27397: Fix typo, reported by Scott MacDonald.
+  
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd.c (File Modified) 
+
+
+androsyn    2012/04/15 21:41:07 UTC	(20120415_0-27391)
+  Log:
+  Fix another case of sizeof() returning the pointer size instead of the variable size
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/resolver/resolver.c (File Modified) 
+
+
+dubkat      2012/03/16 23:10:29 UTC	(20120316_2-27381)
+  Log:
+  more copyright changes
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/contrib/m_clearchan.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/m_force.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/m_ojoin.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/m_okick.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/m_olist.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/doc/server-version-info (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/version.c.SH (File Modified) 
+
+
+dubkat      2012/03/16 05:33:15 UTC	(20120316_1-27371)
+  Log:
+  House cleaning - update our copyright notices
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/bandb/bandb.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/bantool.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/rsdb_sqlite3.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/ircd-shortcut.pl (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/m_opme.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/m_webirc.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/doc/challenge.txt (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/doc/example.conf (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/doc/example.efnet.conf (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/doc/genssl.sh (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/doc/ircd_crontab.sh (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/channel.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/class.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/client.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/common.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/config.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/config.h.dist (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/defaults.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/dns.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/hash.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/hook.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/hostmask.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/ircd.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/ircd_defs.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/ircd_getopt.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/ircd_signal.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/listener.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/match.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/modules.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/monitor.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/numeric.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/packet.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/parse.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/patchlevel.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/reject.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/restart.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_auth.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_conf.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_gline.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_log.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_newconf.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_serv.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_stats.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/s_user.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/scache.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/send.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/sslproc.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/struct.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/include/whowas.h (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/main.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_die.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_error.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_join.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_kick.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_kill.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_message.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_mode.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_nick.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_part.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_quit.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_server.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/core/m_squit.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_accept.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_admin.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_adminwall.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_away.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_cap.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_capab.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_close.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_cmessage.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_connect.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_dline.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_encap.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_gline.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_gungline.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_help.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_info.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_invite.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_ison.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_kline.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_knock.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_links.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_list.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_locops.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_lusers.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_monitor.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_motd.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_names.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_oper.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_operspy.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_pass.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_ping.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_pong.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_post.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_rehash.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_restart.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_resv.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_services.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_set.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_stats.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_svinfo.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_tb.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_testline.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_time.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_topic.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_trace.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_unreject.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_user.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_userhost.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_version.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_wallops.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_who.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_whois.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_whowas.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/m_xline.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/res.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/reslist.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/resolver.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/bandbi.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/cache.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/channel.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/class.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/client.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/dns.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/getopt.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/hash.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/hook.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/hostmask.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/ircd.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/listener.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/modules.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/monitor.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/newconf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/numeric.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/operhash.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/packet.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/parse.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/reject.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/restart.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_auth.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_conf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_log.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_newconf.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_serv.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/s_user.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/scache.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/send.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/sslproc.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/supported.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/whowas.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/ssld/ssld.c (File Modified) 
+
+
+dubkat      2012/03/16 03:49:19 UTC	(20120316_0-27369)
+  Log:
+  Add additional documentation instructing the user that issuing a --prefix to configure is highly advised.
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/INSTALL (File Modified) 
+
+
+androsyn    2012/03/11 00:34:21 UTC	(20120311_1-27357)
+  Log:
+  Rerun autoconf/libtoolize again...
+  
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/configure (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/configure.ac (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/ltmain.sh (File Modified) 
+
+
+androsyn    2012/03/11 00:12:06 UTC	(20120311_0-27353)
+  Log:
+  Rerun autoreconf...
+  
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/configure (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/contrib/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/help/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/aclocal.m4 (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/libltdl/configure (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/modules/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/resolver/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/src/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/ssld/Makefile.in (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/tools/Makefile.in (File Modified) 
+
+
+androsyn    2012/01/16 22:05:21 UTC	(20120116_2-27348)
+  Log:
+  test
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/CREDITS (File Modified) 
+
+
+dubkat      2012/01/16 21:35:50 UTC	(20120116_1-27345)
+  Log:
+  Update SQLite to 3.7.10. release information can be read at: http://www.sqlite.org/releaselog/3_7_10.html
+  
+  
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/shell.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/sqlite3.c (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/bandb/sqlite3/sqlite3.h (File Modified) 
+
+
+dubkat      2012/01/16 05:43:30 UTC	(20120116_0-27341)
+  Log:
+  fix typo in example.conf and example.efnet.conf
+  
+  reported by Brad Smith <brad@comstyle.com>
+  
+  
+
+  Modified:
+	ircd-ratbox/branches/RATBOX_3_0/doc/example.conf (File Modified) 
+	ircd-ratbox/branches/RATBOX_3_0/doc/example.efnet.conf (File Modified) 
+
+
